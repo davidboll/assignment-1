@@ -1,0 +1,69 @@
+.hero-about {
+  align-items: center;
+  background: url("./../images/hero-about-bg.png") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 50px 30px;
+}
+
+.about-me .content,
+.about-me .image {
+  flex: 1;
+}
+
+.about-me .content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.about-me .image {
+  order: -1;
+}
+
+.about-me .image img {
+  border-radius: 15px;
+  height: auto;
+  width: 100%;
+}
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.social-icons a {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin: 0 10px;
+}
+
+@media (min-width: 768px) {
+  .about-me {
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    max-width: 1440px;
+  }
+
+  .about-me .content {
+    max-width: 60%;
+  }
+
+  .about-me .image {
+    max-width: 40%;
+    order: 0;
+  }
+}

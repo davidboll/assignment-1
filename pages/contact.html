@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cowabunga Productions</title>
+    <link rel="stylesheet" href="./../styles/common.css" />
+    <link rel="stylesheet" href="./../styles/contact.css" />
+    <script src="./../scripts/mobile-menu.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index.html"><img src="./../images/logo.png" /></a>
+      </div>
+      <nav id="main-nav">
+        <div id="hamburger-menu">&#9776;</div>
+        <ul id="menu">
+          <li><a href="../index.html">Välkommen</a></li>
+          <li><a href="./about.html">Om mig</a></li>
+          <li><a href="#" class="active">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero-contact">
+      <h4>Behöver du hjälp med ett projekt?</h4>
+      <h1>Kontakta mig</h1>
+    </section>
+    <section class="form-container">
+      <form
+        id="contact-form"
+        action="mailto:david.boll@me.com"
+        method="post"
+        enctype="text/plain">
+        <div class="form-group">
+          <label for="email">Din e-post:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="service">Hur kan jag hjälpa dig?</label>
+          <select id="service" name="service">
+            <option value="film-foto">Film & foto</option>
+            <option value="web-development">Webbutveckling</option>
+            <option value="cat-sitting">Kattvakt</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Ditt meddelande:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Skicka</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Cowabunga Productions. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
